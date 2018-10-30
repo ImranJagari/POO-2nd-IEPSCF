@@ -22,8 +22,16 @@ public class Cave implements Cloneable {
         bouteillesStockees.remove(bouteille);
 
     }
+    public void ajouterBouteilles(ArrayList<Bouteille> bouteilles){
+        this.bouteillesStockees.addAll(bouteilles);
+    }
 
     //methode pour transferer les bouteilles d'une cave à une autre
+
+    public void transferer(Cave cave) {
+        cave.ajouterBouteilles(bouteillesStockees);
+        this.bouteillesStockees.clear();
+    }
 
     public Object clone(){
         Cave tempCave = new Cave(new ArrayList<>());

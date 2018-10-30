@@ -2,6 +2,7 @@ public class Bouteille implements Cloneable{
     private int contenance;
     private String contenu;
 
+
     public Bouteille(int contenance, String contenu) {
         setContenance(contenance);
         setContenu(contenu);
@@ -11,7 +12,7 @@ public class Bouteille implements Cloneable{
         return contenance;
     }
 
-    private void setContenance(int contenance) {
+    protected void setContenance(int contenance) {
         this.contenance = contenance;
     }
 
