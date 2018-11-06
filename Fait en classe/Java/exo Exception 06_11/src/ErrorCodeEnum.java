@@ -1,0 +1,5 @@
+public enum ErrorCodeEnum {
+    CHANGEMENT_DE_CONTENU,
+    OVERFLOW_BOUTEILLE,
+    OBLIGATOIRE_ALCOOL
+}
